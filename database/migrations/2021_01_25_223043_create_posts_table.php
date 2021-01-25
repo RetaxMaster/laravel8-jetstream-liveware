@@ -24,8 +24,7 @@ class CreatePostsTable extends Migration
             $table->timestamps();
 
             $table->foreign("course_id")->references("id")->on("courses");
-
-            $table->timestamps();
+            
         });
     }
 
