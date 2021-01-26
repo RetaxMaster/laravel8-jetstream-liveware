@@ -3,7 +3,7 @@
 
     <div class="bg-white shadow-lg rounded-lg px-4 py-6 text-cemter">
         
-        <a href="{{ route("course") }}">
+        <a href="{{ route("course", $course->slug) }}">
 
             <img src="{{ $course->image }}" class="rounded-md mb-2">
             <h2 class="text-lg text-gray-600 truncate uppercase">{{ $course->name }}</h2>

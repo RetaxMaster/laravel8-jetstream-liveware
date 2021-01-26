@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class PageController extends Controller {
@@ -12,9 +13,9 @@ class PageController extends Controller {
         
     }
 
-    public function course() {
+    public function course(Course $course) {
 
-        return view("course");
+        return view("course", compact("course"));
         
     }
     
